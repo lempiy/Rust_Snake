@@ -115,7 +115,7 @@ impl Snake {
 
         match moving_dir {
             Direction::Up => (head_x, if head_y > 0 {head_y - 1} else {height - 1}),
-            Direction::Down => (head_x, if head_y < height - 1 {head_y + 1} else {0},),
+            Direction::Down => (head_x, if head_y < height - 1 {head_y + 1} else {0}),
             Direction::Right => (if head_x < width - 1 {head_x + 1} else {0}, head_y),
             Direction::Left => (if head_x > 0 {head_x - 1} else {width - 1}, head_y),
         }
